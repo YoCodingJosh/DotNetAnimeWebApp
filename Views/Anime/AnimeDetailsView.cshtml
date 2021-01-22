@@ -12,6 +12,24 @@
     <hr />
     <img style="float:left;" src="@Model.ImageURL" />
     <dl class="row">
+        @if (Model.Score != null)
+        {
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Score)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Score)
+            </dd>
+        }
+        @if (Model.ListStatus != null)
+        {
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.ListStatus)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.ListStatus)
+            </dd>
+        }
         <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.Studios)
         </dt>

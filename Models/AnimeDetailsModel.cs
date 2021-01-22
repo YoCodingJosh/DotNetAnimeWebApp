@@ -17,5 +17,7 @@ namespace AnimeWebApp.Models
         public bool Airing { get; set; }
         public string Premiered { get; set; }
         public int? Episodes { get; set; }
+        public int? Score { get; set; }
+        public string? ListStatus { get; set; }
     }
 }
